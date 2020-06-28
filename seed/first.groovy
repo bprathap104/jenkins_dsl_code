@@ -8,6 +8,8 @@ job('first_seed'){
     }
   }
   steps {
-    jobDsl scriptText: 'job("test-job")'
+    shell {
+      command(String ls)
+    }
   }
 }
