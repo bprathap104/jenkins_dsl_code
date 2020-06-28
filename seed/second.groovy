@@ -3,3 +3,8 @@ job('just_echoing'){
     shell('echo "my love"')
   }
 }
+job('just_cat'){
+  steps {
+    shell('cat Jenkinsfile')
+  }
+}
