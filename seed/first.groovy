@@ -8,6 +8,6 @@ job('first_seed'){
     }
   }
   steps {
-    jobDsl "seed/second.groovy"
+    jobDsl scriptText: 'job("test-job")'
   }
 }
