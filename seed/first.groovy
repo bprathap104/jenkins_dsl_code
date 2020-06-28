@@ -10,6 +10,7 @@ job('first_seed'){
     }
     dsl {
       text(readFileFromWorkspace('seed/second.groovy'))
+      removeAction('DELETE')
     }
   }
 }
