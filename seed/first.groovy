@@ -11,6 +11,6 @@ job('first_seed'){
     shell {
       command('ls')
     }
-    dsl(setScriptText(readFileFromWorkspace('seed/second.groovy')))
+    dsl(setScriptText("job('just_echoing')"))
   }
 }
