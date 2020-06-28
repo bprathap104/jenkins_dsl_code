@@ -8,6 +8,6 @@ job('first_seed'){
     }
   }
   steps {
-    jobDsl targets: ['seed/second.groovy'] 
+    jobDsl "seed/second.groovy"
   }
 }
