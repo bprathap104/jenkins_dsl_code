@@ -8,8 +8,8 @@ job('first_seed'){
     }
   }
   steps {
-    dsl {
-      text(readFileFromWorkspace('seed/second.groovy'))
+    jobDsl {
+      scriptText(readFileFromWorkspace('seed/second.groovy'))
       removeAction('DELETE')
     }
   }
