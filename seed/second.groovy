@@ -1,5 +1,5 @@
 job('just_echoing'){
   steps {
-    sh 'echo "my love"'
+    shell('echo "my love"')
   }
 }
