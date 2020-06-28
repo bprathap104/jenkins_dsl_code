@@ -11,6 +11,9 @@ job('first_seed'){
     shell {
       command('ls')
     }
-    dsl(setScriptText("job('just_echoing')"))
+    dsl {
+      text(readFileFromWorkspace('seed/second.groovy'))
+      removeAction('DELETE')
+    }
   }
 }
