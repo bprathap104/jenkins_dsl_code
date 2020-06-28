@@ -12,7 +12,7 @@ job('first_seed'){
       command('ls')
     }
     dsl {
-      scriptText(readFileFromWorkspace('seed/second.groovy'))
+      setScriptText(readFileFromWorkspace('seed/second.groovy'))
       removeAction('DELETE')
     }
   }
