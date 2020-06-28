@@ -10,7 +10,6 @@ job('first_seed'){
   steps {
     jobDsl {
       scriptText(readFileFromWorkspace('seed/second.groovy'))
-      removeAction('DELETE')
     }
   }
 }
