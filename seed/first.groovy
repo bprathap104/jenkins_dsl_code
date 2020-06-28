@@ -9,7 +9,7 @@ job('first_seed'){
   }
   steps {
     shell {
-      command(String ls)
+      command('ls')
     }
   }
 }
