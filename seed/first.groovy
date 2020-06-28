@@ -11,7 +11,7 @@ job('first_seed'){
     shell {
       command('ls')
     }
-    jobDsl {
+    dsl {
       scriptText(readFileFromWorkspace('seed/second.groovy'))
     }
   }
