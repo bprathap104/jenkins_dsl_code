@@ -4,6 +4,7 @@ job('just_echoing'){
   }
 }
 job('just_cat'){
+  git 'https://github.com/bprathap104/jenkins_dsl_code.git'
   steps {
     shell('cat Jenkinsfile')
   }
